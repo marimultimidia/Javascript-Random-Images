@@ -1,0 +1,93 @@
+(function() {
+      var quotes = [
+          //Min 49 characters for each line for the person's info (name, job, company). //
+
+        //1 - person: Kerry Durrant,<br> Green Home Energy Solutions//
+        {
+        text: "“From the initial enquiry to the day of the tracker installations the process was quick and easy.”",
+        person:"Kerry Durrant, Director<br> at Green Home Energy Solutions Ltd.",
+        img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote1-safety.png"
+        },
+        //2 - person: Mark Ryan,<br> Onsite Health Ltd.//
+        {
+          text: "“Transpoco is an innovative company providing managers with valuable real-time information in a truly user-friendly interface.”",
+          person:"Mark Ryan, COO<br> at Onsite Health Ltd.",
+          img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote2-safety.png"
+        },
+        //3 - person: Gareth Chambers,<br> Around Noon Ltd.//
+        {
+          text: "“We have been delighted with Transpoco... I couldn't imagine managing our fleet without it.”",
+          person:"Gareth Chambers, CEO<br> at Around Noon Ltd.",
+          img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote3-safety.png"
+        },
+        //4 - person: Alan Spain,<br> S&S Office Interiors Ltd//
+        {
+         text: "“We find the service provided extremely professional and would highly recommend it to our clients for fleet tracking.”",
+         person:"Alan Spain, Managing Director<br> at S&S Office Interiors Ltd",
+         img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote4-safety.png"
+        },
+        //5 - person: Peter Ciaran McCrory,<br> McCrory Ltd//
+         {
+         text: "“An efficient, professional team who delivers extremely reliable, easily accessible and flexible GPS fleet management solutions.”",
+         person:"Peter Ciaran McCrory,<br>Director at McCrory Ltd.",
+         img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote5-safety.png"
+        },
+        //6 - person: Gerry Kidd,<br> Dublin City Couriers//
+        {
+          text:"“I have no hesitation in recommending Transpoco to any potential customer: the team, the products and the attention to detail are outstanding,”",
+          person:"Gerry Kidd, Managing Director<br> at Dublin City Couriers Ltd.",
+          img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote6-safety.png"
+        },
+        //7 - person: Richard Aylmer,<br> Le Gourmet Wholefoods//
+        {
+          text:"“Over the last four years we have saved thousands of euros, on wear and tear, staffing levels, and diesel. I have recommended similar systems to friends who run small businesses. [...]”",
+          person:"Richard Aylmer, Sales and Customer Service<br> at Le Gourmet Wholefoods Ltd.",
+          img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote7-safety.png"
+        },
+        //8 - person: Chris Wesson,<br> Zummo Central Ltd//
+         {
+          text:"“I estimate on the first day of having Transpoco GPS tracking that it will save me about £7500 per annum by improving the way we do things, not just in better routes but in doing things in a better way commercially. That saving for a small business is a huge amount.”",
+          person:"Chris Wesson, Director <br>of Zummo Central Ltd.",
+          img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote8-safety.png"
+        },
+        //9 - person: Bill O'Mara,<br> Kish Fish//
+        {
+          text:"“With SynX we were able to identify savings of over 20% in fuel alone, that translates into €10,000 per year.”",
+          person:"Bill O'Mara, Manager<br> at Kish Fish Ltd.",
+          img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote9-safety.png"
+        },
+        //10 - person: Eugene Ward,<br> Trans X Logistics//
+        {
+         text:"“This product IS backed up with a high quality service and a good support team. Your product works, well done lads.”",
+         person:"Eugene Ward, Managing Director<br> at Trans X Logistics Ltd.",
+         img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote10-safety.png"
+        },
+        //New Testimonials added at 28/06/17 //
+        //11 - person: Blair Scales,<br> General Manager at Ballast Signs//
+        {
+         text:"“I’ve been using SynX by Transpoco for the last 4 years: Transpoco provides a good professional and reliable service, very easy to use, to track my vans.”",
+         person:"Blair Scales, General Manager<br> at Ballast Signs",
+         img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote11-safety.png"
+        },
+        //12 - person: Alan Clynch,<br> Head of Publishing at DG Press Ltd//
+        {
+         text:"“Excellent communication and back-up. The ability to generate reports and monitor vehicle usage is excellent. Guaranteed to reduce the day-to-day cost of your fleet.”",
+         person:"Alan Clynch, Head of Publishing <br>at DG Press Ltd.",
+         img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote12-safety.png"
+        },
+        //13 - person: Louis Cronin, Transport Operations Manager<br>at Carroll Freights//
+        {
+         text:"“Good product, does everything reliably, excellent back up service, good value.”",
+         person:"Louis Cronin, Transport Operations Manager<br> at Carroll Freights",
+         img:"https://www.transpoco.com/hubfs/SYNX/customer-quotes-home/quote13-safety.png"
+        }
+
+
+      ];
+      var box = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("box").innerHTML =
+        '<h3 class="text1">' + box.text + '</h3>' +
+        '<img class="img-testimonials" src="' + box.img + '">'+
+        '<p class="person">' + box.person + '</p>'
+        ;
+    })();
